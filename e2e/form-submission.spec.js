@@ -53,6 +53,8 @@ test('Demo page is loaded', async ({ page }) => {
 
   console.log('Complete form confirmation page');
   // ADD Form Thank you page test here
+  const AnotherUser = await page.locator('#Another-User-button');
+  await AnotherUser.click();
 
   // Back to form step 1 and form should be reset
   await page.waitForTimeout(3000);
