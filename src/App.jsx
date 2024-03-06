@@ -9,6 +9,7 @@ function App() {
   const {
     formStep,
     userData,
+    AnotherUser,
     updateUserData,
     confirmForm,
     backToPreviousStep,
@@ -23,6 +24,7 @@ function App() {
         currentStep={formStep}
         updateUserData={updateUserData}
         userData={userData}
+        AnotherUser={AnotherUser}
         confirmForm={confirmForm}
         backToPreviousStep={backToPreviousStep}
       />
